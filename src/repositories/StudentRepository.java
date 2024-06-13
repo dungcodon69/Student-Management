@@ -27,7 +27,7 @@ public class StudentRepository {
     }
 
     private void writeFile(Student student) throws IOException {
-        FileWriter fileWriter = new FileWriter("PATH",true);
+        FileWriter fileWriter = new FileWriter(PATH,true);
         BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
         String p = student.toString();
         bufferedWriter.write(student.toString());
